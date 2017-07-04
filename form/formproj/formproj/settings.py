@@ -68,11 +68,11 @@ TEMPLATES = [
     },
         {
             'BACKEND': 'django.template.backends.jinja2.Jinja2',
-        'DIRS': [os.path.join(BASE_DIR, 'templatejinj'),
+        'DIRS': [os.path.join(BASE_DIR, 'templatesjinj'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
-            'environment': 'attempt.jinja2.environment',
+            'environment': 'formproj.jinja2.environment',
         },
     },
 ]

@@ -11,6 +11,6 @@ def home(request):
 def two(request):
 	conn = psycopg2.connect("dbname = 'learn' user ='postgres' host = '' password = 'sandeep'")
 	cur = conn.cursor()
-	cur.execute("""SELECT * FROM auth_user""")
+	cur.execute("""SELECT email FROM auth_user""")
 	rows = cur.fetchall()
 	return render(request,'2.ht',{'awesome':rows})

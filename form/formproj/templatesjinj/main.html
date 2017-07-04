@@ -6,5 +6,11 @@
 </head>
 <body>
 	{% block content %}{% endblock  %}
+
+	<form method="post">
+	<input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+	{{ form.as_p() }}
+	<input type="submit" name="submit">
+	</form>
 </body>
 </html>

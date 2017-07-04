@@ -9,7 +9,7 @@ Two
 <a href= "/">go back</a>
 
 {% for item in awesome %}
-<div>{{ item.username }}</div>
+<div>{{ item[0] }}</div>
 {% endfor %}
 
 {% endblock %}
